@@ -1,6 +1,7 @@
 import TextInput from"../Textinput/Textinput";
 import Button from"../Button/Button";
 
+
 function TextInputForm({handleFormSubmit,handleTextInputChange,value,inputType="text",setInputType }){
     
     return(
@@ -16,6 +17,7 @@ function TextInputForm({handleFormSubmit,handleTextInputChange,value,inputType="
             <div>
                 <Button
                 styleType="warning"
+                style={{backgroundColor:'blue'}}
                 text={inputType=='password'?"Show":"Hide"}
                 onClickHandler={()=>setInputType(inputType=='password'?"text":"password")}
                 />
@@ -28,6 +30,7 @@ function TextInputForm({handleFormSubmit,handleTextInputChange,value,inputType="
                     />
 
                 </div>
+                
 
         </form>
     );
